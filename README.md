@@ -99,3 +99,43 @@ git commit -m "Description of the changes"
 ```
 git push origin master
 ```
+### structure of project 
+```
+task-management-app/
+├── backend/
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   └── taskController.js
+│   ├── middleware/
+│   │   └── authMiddleware.js
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Task.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── taskRoutes.js
+│   ├── .env
+│   ├── server.js
+│   └── package.json
+└── frontend/
+    ├── public/
+    ├── src/
+    │   ├── components/
+    │   │   ├── Auth/
+    │   │   │   ├── Login.js
+    │   │   │   └── Register.js
+    │   │   ├── Tasks/
+    │   │   │   ├── TaskList.js
+    │   │   │   ├── TaskForm.js
+    │   │   │   
+    │   │   └── App.js
+    │   ├── context/
+    │   │   └── AuthContext.js
+    │   ├── hooks/
+    │   │   └── useAuth.js
+    │   ├── App.css
+    │   ├── index.js
+    │   └── package.json
+```
