@@ -23,17 +23,7 @@ const TaskList = () => {
         }
     }, [user]);
 
-    // Remove a task
-    // const handleRemove = async (taskId) => {
-    //     try {
-    //         await axios.delete(`http://localhost:4000/tasks/${taskId}`, {
-    //             headers: { Authorization: `Bearer ${user}` },
-    //         });
-    //         setTasks(tasks.filter((task) => task._id !== taskId));
-    //     } catch (error) {
-    //         console.error('Error removing task:', error);
-    //     }
-    // };
+   
 
     // Mark a task as completed
     const handleMarkAsCompleted = async (taskId) => {
