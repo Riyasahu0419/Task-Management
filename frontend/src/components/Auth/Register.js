@@ -13,12 +13,12 @@ const Register = () => {
         try {
             const response = await axios.post('http://localhost:4000/auth/register', { fullName, email, password });
 
-            console.log('Registration successful:', response.data);
+            alert('Registration successful:', response.data);
             Navigate("/login")
             
         } catch (error) {
             console.error('Error during registration:', error.response ? error.response.data : error.message);
-            alert('Failed to register. Please try again.'); // Display an error message to the user
+            // alert('Failed to register. Please try again.'); // Display an error message to the user
         }
     };
 
@@ -28,6 +28,8 @@ const Register = () => {
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
             <button type="submit">Register</button>
+            
+            
         </form>
     );
 };

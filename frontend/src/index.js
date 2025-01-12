@@ -8,7 +8,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'; // Updated to use `react-dom/client`
 import App from './components/App'; // Ensure the path to App is correct
 import './App.css'; // CSS file import
-import Register from './components/Auth/Register';
 
 // import TaskForm from './components/Tasks/TaskForm';
 
